@@ -13,7 +13,7 @@ load_dotenv()
 
 # Configurações iniciais
 app = Flask(__name__)
-CORS(app, resources={r"/chatbot": {"origins": "https://chatbot-front-swart.vercel.app"}}, supports_credentials=True)
+CORS(app, resources={r"/chatbot": {"origins": "https://chatbot-front-9b8t.onrender.com"}}, supports_credentials=True)
 
 
 # Configuração do banco
