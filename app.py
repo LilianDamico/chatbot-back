@@ -13,8 +13,7 @@ load_dotenv()
 
 # Configurações iniciais
 app = Flask(__name__)
-CORS(app, resources={r"/chatbot": {"origins": "https://chatbot-front-9b8t.onrender.com"}}, supports_credentials=True)
-
+CORS(app, origins=["https://chatbot-front-9b8t.onrender.com"])
 
 # Configuração do banco
 app.config['SQLALCHEMY_DATABASE_URI'] = (
