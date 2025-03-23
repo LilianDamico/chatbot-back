@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: back
+    name: chatbot-back
     env: python
     plan: free
     buildCommand: "pip install -r requirements.txt"
