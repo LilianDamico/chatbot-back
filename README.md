@@ -96,7 +96,7 @@ pip install --upgrade google-generativeai
 ---
 
 ## 🎥 **Demonstração em vídeo**
-[![Assista no YouTube](https://img.youtube.com/vi/SEU_VIDEO_ID/maxresdefault.jpg)](https://youtu.be/SEU_VIDEO_ID)
+[![Assista no YouTube]https://youtu.be/8DfuRyYUq0A
 
 ---
 
