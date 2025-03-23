@@ -8,14 +8,14 @@ services:
     autoDeploy: true
     envVars:
       - key: DB_HOST
-        value: localhost
+        value: dpg-csmvsb8gph6c73fqn11g-a.oregon-postgres.render.com
       - key: DB_PORT
         value: 5432
       - key: DB_NAME
-        value: chatbot
+        value: serverone
       - key: DB_USER
-        value: postgres
+        value: serverone_user
       - key: DB_PASSWORD
-        value: Lila369*
+        value: VWnEZLO3KB1WSdUG81UgGK2M4WxAlV23
       - key: GEMINI_API_KEY
         value: AIzaSyBTKjh1PGtHoMjKP1pOnGBaQoPmsnQD4oY
