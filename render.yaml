@@ -1,0 +1,21 @@
+services:
+  - type: web
+    name: chatbot-api
+    env: python
+    plan: free
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "gunicorn app:app"
+    autoDeploy: true
+    envVars:
+      - key: DB_HOST
+        value: localhost
+      - key: DB_PORT
+        value: 5432
+      - key: DB_NAME
+        value: chatbot
+      - key: DB_USER
+        value: postgres
+      - key: DB_PASSWORD
+        value: Lila369*
+      - key: GEMINI_API_KEY
+        value: AIzaSyBTKjh1PGtHoMjKP1pOnGBaQoPmsnQD4oY
