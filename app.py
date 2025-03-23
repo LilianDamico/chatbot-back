@@ -63,6 +63,14 @@ def criar_mensagem():
     db.session.commit()
     return jsonify({"id": nova.id, "texto": nova.texto}), 201
 
+@app.route("/perguntar", methods=["POST"])
+def perguntar():
+    data = request.get_json()
+    pergunta = data.get("pergunta", "")
+    resposta = responder_pergunta(pergunta)
+    return jsonify({"resposta": resposta})
+
+
 @app.route("/mensagens", methods=["GET"])
 def listar_mensagens():
     mensagens = Mensagem.query.all()
