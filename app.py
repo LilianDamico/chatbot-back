@@ -4,6 +4,8 @@ from flask_sqlalchemy import SQLAlchemy
 from dotenv import load_dotenv
 import os
 import google.generativeai as genai
+from gemini import responder_pergunta
+
 from flask_cors import CORS
 
 # Carrega as variáveis do .env
