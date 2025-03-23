@@ -69,4 +69,7 @@ def listar_mensagens():
     return jsonify([{"id": m.id, "texto": m.texto} for m in mensagens]), 200
 
 if __name__ == "__main__":
-    app.run(debug=True, port=5000)
+    from os import environ
+    if environ.get("RENDER") != "true":
+        app.run(debug=True, port=5000)
+
