@@ -4,13 +4,14 @@ from flask_sqlalchemy import SQLAlchemy
 from dotenv import load_dotenv
 import os
 import google.generativeai as genai
+from flask_cors import CORS
 
 # Carrega as variáveis do .env
 load_dotenv()
 
 # Configurações iniciais
 app = Flask(__name__)
-CORS(app, origins=["https://chatbot-front-swart.vercel.app"])
+CORS(app, resources={r"/chatbot": {"origins": "https://chatbot-front-swart.vercel.app"}}, supports_credentials=True)
 
 
 # Configuração do banco
